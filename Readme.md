@@ -81,7 +81,7 @@ npm run dev
   <li><a href="https://github.com/harshadaborse">Harshada Borse</a></li>
   <li><a href="https://github.com/bhakti_karwa">Bhakti Karwa</a></li>
   <li><a href="https://github.com/AkshadaMane26">Akshada Mane</a></li>
-  <li><a href="https://github.com/Manasi0304">Manasi Bharti</a></li>
+  <li><a href="https://github.com/Manasi0304">Manasi Bharati</a></li>
 </ul>
 
 #### Feel free to reach out for any queries 😊
