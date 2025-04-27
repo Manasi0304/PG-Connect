@@ -77,11 +77,13 @@ npm run dev
 
 ### Contributors
 
-<h4 ref="https://github.com/Harshada-Borse">Harshada Borse<h4>
-<h4 ref="https://github.com/bhakti_karwa">Bhakti Karwa<h4>
-<h4 ref="https://github.com/AkshadaMane26">Akshada Mane<h4>
-<h4 ref="https://github.com/Manasi0304">Manasi Bharti<h4>
+<ul>
+  <li><a href="https://github.com/harshadaborse">Harshada Borse</a></li>
+  <li><a href="https://github.com/bhakti_karwa">Bhakti Karwa</a></li>
+  <li><a href="https://github.com/AkshadaMane26">Akshada Mane</a></li>
+  <li><a href="https://github.com/Manasi0304">Manasi Bharti</a></li>
+</ul>
 
-#### Fill free to reach out for any queries 😊
+#### Feel free to reach out for any queries 😊
 
 ## Thank you!🧑‍💻
