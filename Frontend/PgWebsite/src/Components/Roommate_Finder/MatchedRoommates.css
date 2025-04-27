@@ -1,0 +1,51 @@
+.matched-roommates-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 100px; /* Added padding to avoid footer overlap */
+    text-align: center;
+    min-height: calc(100vh - 200px); /* Ensure it takes up the remaining space */
+}
+
+.roommate-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.roommate-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.roommate-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .roommate-card {
+        width: 100%;
+    }
+}

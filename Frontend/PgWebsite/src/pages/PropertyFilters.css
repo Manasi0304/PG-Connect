@@ -1,0 +1,144 @@
+/* Container */
+.filter-section {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #1c027a;
+}
+
+/* Filter Box */
+.filter-box {
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    padding: 6px 15px;
+    min-width: 100px;
+    max-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    
+}
+
+.filter-box:hover {
+    background: #e9ecef;
+}
+
+.filter-header {
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Dropdown body */
+.filter-body {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 10;
+    padding: 10px 0;
+}
+
+/* Filter Options */
+.filter-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 180px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button wrapper outside filter section */
+.filter-button-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.apply-button,
+.clear-button {
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 16px;
+}
+
+.apply-button {
+    background-color: #0d0139;
+    color: #fff;
+}
+
+.clear-button {
+    background-color: #f5eded;
+    color: #0d0139;
+    border: 1px solid #0d0139;
+}
+
+.apply-button:hover {
+    background-color: #1c027a;
+}
+
+.clear-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .filter-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-box {
+        width: 100%;
+    }
+
+    .filter-button-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apply-button,
+    .clear-button {
+        width: 90%;
+    }
+
+    input[type="number"] {
+        width: 100%;
+    }
+}

@@ -1,0 +1,166 @@
+/* Category.css */
+
+.category-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin-top: 20px;;
+  }
+  
+  .category-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .text-section {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .category-heading {
+    font-size: 1rem;
+    color: #4a4d4a;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .category-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #272d3c;
+  }
+  
+  .category-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .info-icon {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-right: 1rem;
+  }
+  
+  .info-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.3rem;
+  }
+  
+  .info-description {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: left;
+
+  }
+  
+  .image-section {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .sub-images {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .sub-images img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hover-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-wrapper:hover .hover-image {
+    transform: scale(1.05);
+}
+
+.hover-caption {
+    position: absolute;
+    bottom: -100%; /* Initially hidden below */
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.image-wrapper:hover .hover-caption {
+    bottom: 0; /* Moves up on hover */
+}
+
+.arrow-icon {
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+  @media (max-width: 768px) {
+    .category-content {
+      flex-direction: column;
+    }
+  
+    .sub-images {
+      flex-direction: column;
+    }
+  
+    .sub-images img {
+      max-width: 100%;
+    }
+  }
+  

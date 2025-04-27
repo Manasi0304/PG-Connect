@@ -1,0 +1,123 @@
+.locations {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    
+    padding: 20px;
+  }
+  
+  .gallery {
+    position: relative;
+  }
+  
+  .slick-slide {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slick-slide:hover {
+    transform: scale(1.05);
+  }
+  
+  .slick-dots li button:before {
+    color: #333;
+    font-size: 12px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #ff6600;
+  }
+  
+  .slick-prev, .slick-next {
+    z-index: 10;
+  }
+  
+  .gallery div {
+    overflow: hidden;
+    transition: 0.3s;
+    
+  }
+  
+  .gallery div img {
+    width: 80%; /* Adjusted width */
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    display: block; /* Makes it a block element */
+    margin: auto; /* Centers the image horizontally */
+  }
+  
+  
+  .gallery div p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 0;
+    margin: 0;
+    height: 45px;
+    width: auto;
+  }
+  
+  .see-more-btn {
+    background: #ff6600;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 40px !important; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
+    margin-left: 4%;
+    width: 200px;
+  }
+  
+  .see-more-btn img {
+    width: 16px;
+    margin-left: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .see-more-btn:hover {
+    background: #ff9900;
+    transform: scale(1.05);
+  }
+  
+  .see-more-btn:hover img {
+    transform: translateX(5px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .gallery div img {
+      height: 200px;
+    }
+    
+    .gallery div p {
+      font-size: 16px;
+    }
+  
+    .see-more-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .gallery div img {
+      height: 180px;
+    }
+    
+    .gallery div p {
+      font-size: 14px;
+    }
+  
+    .see-more-btn {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  

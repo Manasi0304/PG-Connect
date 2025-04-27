@@ -1,0 +1,94 @@
+/* Additional styles for the Register page - Add these to Login.css */
+
+/* Register-specific styling */
+.register-page {
+    background-color: #f5f8ff;
+    margin-top: 4%;
+}
+
+.register-form .login-input-group:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+/* OTP Section */
+.otp-resend {
+    text-align: right;
+    margin-bottom: 1.5rem;
+}
+
+.otp-resend-button {
+    background: none;
+    border: none;
+    color: #2841a7;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    font-weight: 500;
+}
+
+.otp-resend-button:hover {
+    color: #1b2f7a;
+}
+
+.otp-resend-button:disabled {
+    color: #6179d8;
+    cursor: not-allowed;
+}
+
+/* Progress indicator for multi-step form */
+.register-progress {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.register-progress-step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e1e5ee;
+    color: #6179d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    position: relative;
+}
+
+.register-progress-step.active {
+    background-color: #2841a7;
+    color: white;
+}
+
+.register-progress-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 2rem;
+    background-color: #e1e5ee;
+    right: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.register-progress-step.active:not(:last-child)::after {
+    background-color: #2841a7;
+}
+
+/* Animation for step transition */
+.login-form {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

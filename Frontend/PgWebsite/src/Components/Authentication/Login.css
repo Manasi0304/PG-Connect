@@ -1,0 +1,183 @@
+/* Login.css - Scoped with unique class names to avoid conflicts */
+
+/* ---------- Login Page Base Styles ---------- */
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f8ff;
+  padding: 2rem;
+  margin-top: 2%;
+  background-image: url('/loginback.png');
+}
+
+.login-container {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* ---------- Login Card ---------- */
+.login-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(40, 65, 167, 0.15);
+  overflow: hidden;
+}
+
+/* ---------- Login Header ---------- */
+.login-header {
+  background-color: #2841a7;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.login-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.login-subtitle {
+  opacity: 0.85;
+  font-size: 1rem;
+}
+
+/* ---------- Login Form ---------- */
+.login-form {
+  padding: 2rem;
+}
+
+.login-input-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.login-input-field {
+  display: flex;
+  align-items: center;
+  background-color: #f7f9fc;
+  border: 1px solid #e1e5ee;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.login-input-field:focus-within {
+  border-color: #2841a7;
+  box-shadow: 0 0 0 2px rgba(40, 65, 167, 0.2);
+}
+
+.login-icon {
+  color: #2841a7;
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+}
+
+.login-input-field input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+.login-input-field input::placeholder {
+  color: #aab;
+}
+
+/* ---------- Forgot Password Link ---------- */
+.login-forgot-password {
+  text-align: right;
+  margin-bottom: 1.5rem;
+}
+
+.login-forgot-link {
+  color: #2841a7;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.login-forgot-link:hover {
+  color: #1b2f7a;
+  text-decoration: underline;
+}
+
+/* ---------- Login Button ---------- */
+.login-button {
+  width: 100%;
+  background-color: #2841a7;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #1b2f84;
+}
+
+.login-button:disabled {
+  background-color: #6179d8;
+  cursor: not-allowed;
+}
+
+/* ---------- Register Prompt ---------- */
+.login-register-prompt {
+  padding: 1.5rem 2rem;
+  background-color: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-top: 1px solid #e1e5ee;
+}
+
+.login-register-prompt p {
+  color: #555;
+}
+
+.login-register-link {
+  color: #2841a7;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.login-register-link:hover {
+  color: #1b2f7a;
+  text-decoration: underline;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 480px) {
+  .login-page {
+    padding: 1rem;
+  }
+
+  .login-header {
+    padding: 1.5rem;
+  }
+
+  .login-form {
+    padding: 1.5rem;
+  }
+
+  .login-header h2 {
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,19 @@
+.home-container {
+    text-align: center;
+    padding: 50px;
+}
+.home-buttons {
+    margin-top: 20px;
+}
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #d37742;;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #d37742;;
+}
